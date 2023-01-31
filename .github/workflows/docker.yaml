@@ -47,7 +47,7 @@ jobs:
           type=semver,pattern={{version}}
 
     - name: 🔨 Build and maybe push
-      uses: docker/build-push-action@v3
+      uses: docker/build-push-action@v4
       with:
         context: .
         # Only push images from master or release tags, unless it's about
